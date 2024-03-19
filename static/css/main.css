@@ -1,0 +1,25 @@
+#logo {
+max-height: 700px;
+}
+
+#logo-col {
+    border-bottom: 3px solid darkgray;
+}
+
+#logo-cont {
+    background-color: rgb(255, 146, 139);
+    /* background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); */
+    /* background: linear-gradient(0deg, #89b890 0%, rgb(255, 146, 139) 100%); */
+} 
+
+#flowers {
+    background-color: rgb(255, 146, 139);
+    border-top: 3px solid darkgray;
+    border-bottom: 3px solid darkgray;
+}
+
+#map {
+    background-color: rgb(255, 146, 139);
+    border-bottom: 3px solid darkgray;
+    border-top: 3px solid darkgray;
+}
