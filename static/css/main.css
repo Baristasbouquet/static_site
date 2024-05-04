@@ -3,23 +3,32 @@ max-height: 700px;
 }
 
 #logo-col {
-    border-bottom: 3px solid darkgray;
+    /* border-bottom: 3px solid darkgray; */
+    border-bottom: 5px solid #ffdb4f;
+}
+#coffee, #both {
+    /* Applying alpha channel (opacity) to this hexadecimal color value  the last 2 digits 
+    go from 00  --> FF*/
+    background-color: #8390FA50;
 }
 
 #logo-cont {
-    background-color: rgb(255, 146, 139);
+    /* background-color: rgb(255, 146, 139); */
+    background-color: #ff8882;
     /* background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); */
     /* background: linear-gradient(0deg, #89b890 0%, rgb(255, 146, 139) 100%); */
 } 
 
 #flowers {
-    background-color: rgb(255, 146, 139);
-    border-top: 3px solid darkgray;
-    border-bottom: 3px solid darkgray;
+    /* background-color: rgb(255, 146, 139); */
+    background-color: #ff8882;
+    border-top: 5px solid #ffdb4f;
+    border-bottom: 5px solid #ffdb4f;
 }
 
 #map {
-    background-color: rgb(255, 146, 139);
-    border-bottom: 3px solid darkgray;
-    border-top: 3px solid darkgray;
+    /* background-color: rgb(255, 146, 139); */
+    background-color: #ff8882;
+    border-bottom: 5px solid #ffdb4f;
+    border-top: 5px solid #ffdb4f;
 }
