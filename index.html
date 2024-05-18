@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Barista's Bouquet</title>
     <link rel="icon" type="image/x-icon" href="/static/images/Barista'sBouquet_White_Cropped_NO_TYPE.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/main.css">
@@ -15,84 +20,143 @@
 <body>
     <h1 hidden>Barista's Bouquet is a coffee shop with flowers (coffee and/or flower shop) in West Des Moines, Iowa.
     </h1>
-    <div id="logo-cont" class="container-fluid">
-        <div class="row align-items-center text-center">
-            <div id="logo-col" class="col p-3">
-                <img id="logo" class="img-fluid" src="/static/images/BB_FINAL_Black_trans_bg.png" alt="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/static/images/BB_FINAL_Black_trans_bg.png" class="mx-5 "
+                    alt="brand icon" height="160"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cofee-menu.html">Coffee Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#footer-cont">Contact</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">&#128679 Flowers &#128679</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">&#128679 Subscriptions &#128679</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">&#128679 Our Team &#128679</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
+    </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="notOpenModal" tabindex="-1" aria-labelledby="notOpenModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="notOpenModalLabel">Pssst. We're not open yet!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    We're working hard to get open as soon as possible! Just so you're aware it doesn't look like we've
+                    made
+                    it there just yet. Feel free to browse, contact us, follow our socials. <strong>-- Coming Soon!
+                        June?</strong>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ALERT -->
+    <!-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Opening Soon!</strong>  We expect to be open in at some point in June.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div> -->
+    <div id="grid-cont">
+        <div class="img-grid p-4">
+            <div class="one-one text-center">
+                <img class="img-fluid grid-img" src="/static/images/beans_n_brew_r.jpg" alt="">
+                <a id="first" type="button" href="cofee-menu.html"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold">Coffee
+                    Menu</a>
+            </div>
+            <div class="one-two text-center">
+                <img class="img-fluid grid-img" src="/static/images/dark_bg_r.jpg" alt="">
+                <a type="button"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold disabled">&#128679 Flowers
+                    &#128679</a>
+            </div>
+            <div class="one-three text-center">
+                <img class="img-fluid grid-img" src="/static/images/dark_n_red_roses_r.jpg" alt="">
+                <a type="button"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold disabled">&#128679 Subscriptions &#128679</a>
+            </div>
+            <div class="two-one text-center">
+                <img class="img-fluid grid-img" src="/static/images/coffee_mocktail_r.jpg" alt="">
+                <a type="button"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold disabled">&#128679 Our
+                    Team &#128679</a>
+            </div>
+            <div class="two-two text-center">
+                <img class="img-fluid grid-img" src="/static/images/dark_colors_r.jpg" alt="">
+                <a type="button" href="#footer-cont"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold">Contact
+                    Info</a>
+            </div>
+            <div class="two-three text-center">
+                <img class="img-fluid grid-img" src="/static/images/bean_scoop_r.jpg" alt="">
+                <a type="button"
+                    class="btn btn-light w-50 opacity-75 position-absolute top-50 start-50 translate-middle fw-bold disabled">&#128679 FAQ &#128679</a>
+            </div>
+        </div>
     </div>
 
     <section id="coffee">
         <div class="container">
-            <div class="row  align-items-center">
-                <div class="col-lg-6">
-                    <div class="p-5"><img class="img-fluid rounded-5" src="static/images/shot.jpg" alt="..." />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-5">
-                        <h2 class="display-4">Coffee, the good stuff!</h2>
-                        <p>We're obsessed and will be offering the very best of what we've found!</p>
-                        <p>That means the best of drip to espresso classics, special house-made syrups, cold-brew,
-                            loose-leaf tea. We've got something for the season and others that don't need a special
-                            season!</p>
-                    </div>
+            <div class="row">
+                <div class="col text-center">
+                    <img class="pt-4" src="/static/images/BB_FINAL_Type_Stacked_Ungrouped_trans.png" alt="">
+                    <hr>
+                    <h2>Coffee | Flowers</h2>
+                    <p class="px-5 py-3 mx-5">In either of our primary passions (see above), we always strive for the
+                        same goal: Custom,
+                        hand-crafted, and high quality offerings. That means house made syrups that start with turbinado
+                        sugar to highlight the freshest beans from our custom blends. Also featuring locally grown
+                        flowers in beautiful seasonal arrangements made right here by hand.</p>
+                    <p class="px-5 py-3 mx-5">We're a local, family-owned, independent business shining a spotlight on
+                        our local
+                        community centered at 60th
+                        St and Ashworth Rd in West Des Moines, IA. We feature awesome baked goods from <a
+                            class="text-decoration-none" href="https://www.thebakeshoppe.org/">The Bake Shoppe</a>, the
+                        best
+                        beans from <a class="text-decoration-none" href="https://pammelparkcoffee.com/">Pammel Park
+                            Coffee CO</a>, and flowers from several
+                        local farms in season. We're open 7am - 2pm 6 days a week (every day except Tuesday, those are
+                        for tacos!). Stop in, take a sip, smell the flowers!</p>
+                    <h5 class="py-3 euphoria-script-regular"><span id="phrase-part-one"></span>Tastes like a latte <span
+                            class="euphoria-script-regular" id="phrase-part-two">, smells like a rose.</span></h5>
+
                 </div>
             </div>
         </div>
+
     </section>
 
-    <section id="flowers">
-        <div class="container">
-            <div class="row  align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="static/images/bouquet_dark.jpg"
-                            alt="..." /></div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">Flowers, for a brighter day!</h2>
-                        <p>We'll be featuring unique and beatiful arrangements all custom designed in-house and
-                            available for pickup. When feasible our features focus on locally-sourced flowers bound with
-                            sustainable products and reclaimed materials. </p>
-                        <p>TL;DR- Hand-tied bouquets, custom arrangements, and unique offerings! </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="both">
-        <div class="container">
-            <div class="row  align-items-center">
-                <div class="col-lg-6">
-                    <div class="p-5"><img class="img-fluid rounded-5" src="static/images/both.jpg" alt="..." />
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-5">
-                        <h2 class="display-4">When? What's the deal?</h2>
-                        <p>Coming Soon. . .We're working on it! Look for more details as we get closer but:</p>
-                        <p>Look for us sometime around <strong>May/June 2024</strong></p>
-                        <p>Questions, thoughts, epiphanies? Wanna work with us?  Let us know/introduce yourself:</p>
-                        <p></p>
-                        <a class="text-decoration-none fw-bold " id="email-link"
-                            href="mailto:Baristasbouquet@gmail.com">
-                            <p>BaristasBouquet@gmail.com</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="map">
+
+    <!-- <section id="map">
         <div class="container">
             <div class="row  align-items-center ">
                 <div class="col-lg-6 ">
                     <div class="p-5">
                         <h2 class="display-4">Where?</h2>
-                        <p>Here. Psst, try zooming out as this map --> <i>is</i> interactive but zooms in <i>really</i>
+                        <p>Here. Psst, try zooming out as this map > > > <i>is</i> interactive but zooms in <i>really</i>
                             tight! Look for us on the SouthEast corner of 60th and Ashworth in West Des Moines soon.</p>
                     </div>
                 </div>
@@ -103,21 +167,57 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="py-5 bg-black">
-        <div class="container px-5">
-            <div class="row align-items-center">
+    </section> -->
+
+
+    <footer class="py-5">
+        <div id="footer-cont" class="container px-5">
+            <div class="row align-items-center pb-4">
+                <div class="col text-center ">
+                    <a href="https://www.facebook.com/profile.php?id=61558646947959" target="_blank" class="px-4"><img
+                            src="/static/images/Facebook_Logo_Primary.png" alt="Facebook Logo" height="auto"
+                            width="35px"></a>
+                    <a href="https://www.instagram.com/baristasbouquet_ia/" target="_blank" class="px-4"><img
+                            src="/static/images/Instagram_Glyph_Gradient.png" alt="Instagram Logo" height="auto"
+                            width="35px"></a>
+                    <a href="mailto:BaristasBouquet@gmail.com" target="_blank" class="px-4"><img
+                            src="/static/images/email-13728.png" alt="email icon" height="auto" width="35px"></a>
+                </div>
             </div>
-            <div class="col">
-                <p class="m-0 text-center text-white fw-bold">Copyright &copy; Barista's Bouquet LLC 2024</p>
+            <div class="row align-items-center pt-3">
+                <div class="col"></div>
+                <div class="col">
+                    <h6><span><a href="https://maps.app.goo.gl/GB3gEvhpCkAd5ms66" target="_blank"><img
+                                    src="/static/images/maps-icon-8216.png" alt="map pin icon" height="auto"
+                                    width="35px"></a></span>- 5938 Ashworth Rd, West Des Moines, IA, 50266</h6>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row align-items-center mt-3">
+
+                <div class="col text-center">
+                    <a href="tel:515-500-6260" class="text-decoration-none text-black">
+                        <h6><span><img src="/static/images/call_text.png" alt="call or text" height="auto"
+                                    width="45px"></span> - (515)500-6260</h6>
+                    </a>
+                </div>
+
             </div>
 
             <div class="row align-items-center mt-3">
+
+                <div class="col">
+                    <p class="m-0 text-center fw-bold"><span id="copy">&copy;</span> Barista's Bouquet LLC 2024</p>
+                </div>
             </div>
-            <div class="col">
-                <a href="privacy-policy.html" class="text-decoration-none">
-                    <p class="m-0 text-center text-white small">Privacy Policy</p>
-                </a>
+
+            <div class="row align-items-center mt-3">
+
+                <div class="col">
+                    <a href="privacy-policy.html" class="text-decoration-none">
+                        <p class="m-0 text-center fw-bold text-black small">Privacy Policy</p>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
