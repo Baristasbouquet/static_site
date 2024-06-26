@@ -229,3 +229,6 @@ footer {
     animation-duration: 3s;
 }
 
+#clock {
+    font-size: xx-large;
+}

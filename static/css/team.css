@@ -1,3 +1,13 @@
-#coffee {
-    background: linear-gradient(#ff8882b0, #8390FA25);
+#emp-apply {
+    /* background: linear-gradient(#ff8882b0, #8390FA25); */
+    background-color: #8390FA25;
+    border-bottom: 3px solid darkgrey;
+    padding-top: 5px;
+}
+
+.kay {
+    border-radius: 48%;
+    border: 4px solid rgb(145, 145, 145);
+    max-width: 400px;
+    height: auto;
 }
