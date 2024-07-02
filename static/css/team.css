@@ -11,3 +11,12 @@
     max-width: 400px;
     height: auto;
 }
+
+@media (max-width: 440px) {
+    .kay {
+        border-radius: 48%;
+        border: 4px solid rgb(145, 145, 145);
+        max-width: 250px;
+        height: auto;
+    }
+}
