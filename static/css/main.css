@@ -72,6 +72,9 @@
             "two-two two-three";
         background-color: #ff8882b0;
     }
+    #gothic {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 481px) {
@@ -86,6 +89,9 @@
             "one-one one-two one-three"
             "two-one two-two two-three";
         background-color: #ff8882b0;
+    }
+    #gothic {
+        max-width: 60%;
     }
 }
 
@@ -239,3 +245,4 @@ footer {
     transform: scale(0.95);
     transition: 1s ease;
 }
+
