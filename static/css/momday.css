@@ -1,0 +1,13 @@
+
+@media (max-width:800px) {
+    #flyer {
+        max-width: 90%;
+        max-height: auto;
+    }
+}
+@media (min-width:801px) {
+    #flyer {
+        max-width: 600px;
+        max-height: auto;
+    }
+}
