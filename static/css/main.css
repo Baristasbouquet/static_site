@@ -245,4 +245,7 @@ footer {
     transform: scale(0.95);
     transition: 1s ease;
 }
+#alert_hr{
+    height: 10px;
 
+}
