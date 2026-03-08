@@ -11,7 +11,7 @@
 max-width: 600px;
 height: auto;
 }
-@media (max-width:481px){
+@media (min-width:771px){
     #menu_pic {
         max-width: 50%;
     }
