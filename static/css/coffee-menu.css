@@ -13,7 +13,12 @@ height: auto;
 }
 @media (min-width:771px){
     #menu_pic {
-        max-width: 50%;
+        max-width: 80%;
+    }
+}
+@media (max-width:770px){
+      #menu_pic {
+        max-width: 100%;
     }
 }
 .blubb {
